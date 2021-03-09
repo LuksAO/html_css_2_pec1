@@ -1,21 +1,175 @@
+@use "sass:color";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
-  padding: 30px;
+  padding: 0;
+  height: 100%;
+}
+
+button {
+  font: unset;
+}
+
+body {
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  font-size: 16px;
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
+a {
+  color: darken($primary-color, 30%);
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+.fa-colored {
+  background-color: $primary-color;
+}
+
+.circle {
+  position: fixed;
+  width: 200%;
+  height: 50%;
+  background-color: $primary-color;
+  border-radius: 50%;
+  transform: translate(-25%, -50%);
+  z-index: -1;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: unset;
+  height: unset;
+  color: black;
+  opacity: 1;
+  padding: 5px;
+  background-color: lightgray;
+
+  &.swiper-pagination-bullet--active,
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.swiper-pagination-bullets {
+  right: 5px !important; // overrides Swiper.js style
+  font-size: 14px;
+}
+
+.profile {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.personal-description {
+  max-width: 30rem;
+}
+
+.divider {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid $primary-color;
+}
+
+.my-2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.smaller {
+  font-size: 13px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.formation-item {
+  text-align: left;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 2.5px;
+  background-color: white;
+}
+
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.button {
+  background-color: $primary-color;
+  color: black;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.colored-text {
+  color: darken($primary-color, 30%);
+}
+
+@media (min-width: 640px) {
+  .swiper-pagination-bullets {
+    display: none;
+  }
+
+  .swiper-slide {
+    padding: 10px;
+  }
 }

@@ -1,21 +1,110 @@
 <!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <title>Lucas Alonso Ortega C.V.</title>
+</head>
+<body>
+  <div class="circle"></div>
+   
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <section class="swiper-slide">
+        <h1 class="title">Lucas Alonso Ortega</h1>
+        <div class="italic bold mb-2">Desarrollador Web</div>         
+        <div class="divider"></div>
+        <p class="personal-description">
+          Ingeniero informático especializado en la rama de desarrollo web (back-end y front-end). Experiencia con diversos lenguajes y frameworks web.
+        </p>
+        <div class="divider"></div>
+        <div class="my-2 smaller align-left">
+          <div class="my-1">
+            <i class="fas fa-envelope mr-1"></i>
+            <a href="mailto:luk.alonso.ortega@gmail.com">luk.alonso.ortega@gmail.com</a>
+          </div>
+          <div class="my-1">
+            <i class="fab fa-linkedin mr-1"></i>
+            <a href="https://www.linkedin.com/in/lucas-alonso-ortega-6787951ab/">LinkedIn</a>
+          </div>
+        </div>
+        <button class="button mt-3">
+          Descargar C.V.
+        </button>
+      </section>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC! <i class="fas fa-university"></i></h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+      <section class="swiper-slide">
+        <h1 class="title">Formación académica</h1>
+
+        <div class="my-2">
+
+          <div class="formation-item">
+            <div>
+              <span class="bold">Grado universitario en Ingeniería Informática</span>
+              <span class="italic">(2016/2020)</span>
+            </div>
+            <div class="divider my-1"></div>
+            <div class="light">
+              Universidad de La Laguna (Tenerife)
+            </div>
+          </div>
+
+          <div class="formation-item">
+            <div>
+              <span class="bold">Máster universitario de Desarrollo de Sitios y Aplicaciones Web</span>
+              <span class="italic">(2020/actualidad)</span>
+            </div>
+            <div class="divider my-1"></div>
+            <div class="light">
+              Universidad Oberta de Cataluña
+            </div>
+          </div>
+  
+        </div>
+
+      </section>
+
+      <section class="swiper-slide">
+        <h1 class="title">Experiencia laboral</h1>
+        <div class="my-2">
+
+          <div class="formation-item">
+            <div>
+              <span>Prácticas de grado en: </span><br>
+              <span class="bold">Gear Translations S.L.</span>
+              <span class="italic">(276 horas)</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <section>
+          <h1 class="title">Habilidades profesionales</h1>
+          <div class="my-2">
+            Experiencia con HTML, CSS, JavaScript, <span class="colored-text">Angular</span>,
+            <span class="colored-text">React</span>, Java, C, Ruby y Kotlin.
+          </div>
+          <div class="my-2">
+            Nociones básica de PHP, Python, Kotlin, Laravel, Ruby on Rails y
+            <span class="colored-text">bases de datos</span>.
+          </div>
+        </section>
+      </section>
+      
+    </div>
+    <!-- pagination -->
+    <div class="swiper-pagination" role="navigation"></div>
+
+  </div>
+
+  <script src="./assets/scripts/main.js"></script>
+</body>
 </html>
